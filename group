@@ -1,0 +1,138 @@
+
+<html>
+
+<head>
+	<title>Wireless and Mobile System (WIMOS) Research Group </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="description" content="WIMOS research group is based out of the School of Computing at Wichita State Unviersity. We are designing innovative wireless and mobile systems to empower people for health, safety, privacy, and security.">
+
+	<meta property="og:title" content="WIMOS">
+	<--<meta property="og:image" content="cover.jpg">!-->
+
+	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Roboto+Mono:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/mavo.min.css">
+	<script src="js/mavo.es5.min.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./cursor-chat-v0.2.0/dist/style.css"/>
+</head>
+
+
+<body>
+	<!-- cursor chat -->
+<div id="cursor-chat-layer">
+	<input type="text" id="cursor-chat-box">
+</div>
+
+<!-- Skip to content link -->
+<a href="#projects" class="skip-link" style="position: absolute; left: -9999px; opacity: 0;">Skip to main content</a>
+
+	<!-- top nav -->
+	<div class="container-fluid">
+		<div class="row justify-content-md-center">
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<a href="index.html"><img src="img/logo_long.png" class="logo" alt="Social Futures Lab"></a>
+			</div>
+
+			<div class="col-md-2 col-lg-2"></div>
+
+			<div class="col-xs-12 col-sm-7 col-md-5 col-lg-5 menu">
+				<a href="research.html">Research</a>
+				<a href="members.html">Team</a>
+				<a href="resources.html">Resources</a>
+				<a href="news.html">News</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- header -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<p class="title">The <b>WIMOS</b> is based out of the <a href="https://www.wichita.edu/academics/engineering/SoC/"> School of Computing</a> at Wichita State University. We are designing innovative wireless and mobile systems to empower people for health, safety, privacy, and security. <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modalLong">
+				  <img src="img/cursor-chat-btn.svg" alt="cursor chat"/>
+				</button></p>
+
+				<!-- Modal -->
+				<div class="modal fade" id="modalLong" tabindex="-1" role="dialog" aria-labelledby="modalLongTitle" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+							<div class="modal-header">
+				        <h3 class="modal-title" style="font-family: 'Roboto Mono', monospace; color: black">Why do I sometimes see other cursors?</h3>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <p>If you're on desktop, you can chat with other visitors of this site's homepage in real time by pressing <code>/</code>. Other visitors can see your message and respond with their own messages! Press <code>Esc</code> to clear your message.</p>
+
+								<img src="img/cursor-chat.gif" style="width: 100%; margin-bottom: 5px"/>
+
+								<p><a href="https://github.com/jackyzha0/cursor-chat">Credits</a></p>
+
+				      </div>
+
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+		</div>
+
+		<hr />
+
+
+
+		<!-- Top section -->
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<!-- People -->
+				<div id="projects" mv-bar="none" mv-app="people" mv-source="https://github.com/Social-Futures-Lab/social-futures-lab.github.io">
+					<h2 >People</h2>
+
+					<div class="row">
+						<!-- Each member -->
+						<article class="member-index" property="member" typeof="Person" mv-multiple>
+							<span class="[if(alum, hideauthor)]">
+								<a href="[website_url]" property="homepage" aria-label="[name]">
+									<img src="null" class="person-img" property="image" alt=""><br />
+									<span property="name">Name</span>
+								</a>
+
+								<meta property="id" content="[name]">
+
+								<p property="jobTitle">
+									<select>
+										<option value="pi">Assistant Professor</option>
+										<option value="postdoc" selected>Postdoctoral Researcher</option>
+										<option value="phd" selected>PhD Student</option>
+										<option value="visiting">Visiting Researcher</option>
+										<option value="masters">Masters Student</option>
+										<option value="undergrad">Undergraduate Student</option>
+										<option value="intern">Summer Intern</option>
+									</select>
+								</p>
+							</span>
+						</article>
+					</div>
+
+					<div hidden>
+						<datalist id="memberList">
+							<option property="person" mv-multiple mv-value="name"></option>
+						</datalist>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+
+			<div class="col-xs-12 col-sm-4 col-md-4" style="float: right">
+  </body>
+</html>
